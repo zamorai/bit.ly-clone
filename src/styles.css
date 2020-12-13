@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+  line-height: 1.9rem;
+}
+
+/*---------- VARIABLES --------- */
+
+:root {
+  --primary: #2a5bd7;
+  --primary-strong: #0e4ceb;
+}
+
+/*---------- GENERIC --------- */
+.primary-btn{
+  background-color: var(--primary);
+  color: white;
+  padding: 1.1rem 1.6rem;
+  border-radius: 0.6rem; 
+  text-decoration: none; 
+} 
+
+.link{
+  color: black;
+  text-decoration: none;
+}
+
+.blue {
+  color: var(--primary);
+}
+
+/*---------- HEADER --------- */
+
+.header-container{
+  max-width: 1140px;  
+  padding: 20px 8px 8px; 
+  margin: auto;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+}
+
+.header-logo{
+  height: 4.1rem;
+}
+
+.header-main-nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav{
+  font-size: 1.4rem;
+  position: relative;
+  align-self: flex-start;
+  min-width: 530px; 
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-nav-item{
+  cursor: default;
+  position: relative;
+}
+.header-nav-item:hover{
+  color: var(--primary-strong);
+  cursor: default;
+  position: relative;
+}
+
+.header-nav-item::after{
+  content: "";
+  height: 0.2rem;
+  width: calc(70%); 
+  border-radius: 2rem;    
+  background-color: var(--primary);
+  position: absolute;
+  bottom: -1rem;  
+  left: 15%; 
+  transform: scaleX(0);
+  transition: transform 0.2s;
+}
+
+.trigger{
+  height: 30px; 
+}
+
+.header-nav-item:hover::after {
+  transform: scaleX(1);
+}
+
+.header-login{
+  align-self: flex-start;
+  font-size: 1.4rem;
+  display: flex;
+  min-width: 33rem;
+  justify-content: space-around;
+}
+
+/*---------- DROPDOWN MENU --------- */
+
+.dropdown-menu {
+  width: 47rem;
+  padding: 1.5rem; 
+  background-color: white;
+  position: absolute;
+  top: 28px; 
+  left: 0; 
+  list-style: none;
+  text-align: none;
+  border: solid 1px rgba(0, 0, 0, 0.164);    
+  box-shadow: 0.2rem 0.5rem 1.2rem rgba(0, 0, 0, 0.171); 
+  border-radius: 0.6rem;  
+} 
+
+.dropdown-menu li {
+  color: black; 
+  background: white; 
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover{
+  background: #f3f3f3; 
+}
+
+.dropdown-menu.clicked {
+  display:none
+}
+
+.dropdown-link {
+  display: flex; 
+  width: 100%;
+  height: 100%;
+  text-decoration: none; 
+  color: rgb(51, 51, 51); 
+  padding: 1rem; 
+}
+.dropdown-link:hover {
+  color: var(--primary); 
+}
+
+.dropdown-icon{
+  margin-right: 1.3rem;
+  margin-bottom: 0.4rem;  
+}  
+
+.dropdown-main {
+  font-weight: 600;  
+}
+
+.dropdown-secondary {
+  font-size: 1.3rem;
+  color: grey;  
+}
+
+.icon-fill{
+  fill: currentColor;   
+}
+
+
+
+
+ 
