@@ -6,7 +6,7 @@ export default function Hero() {
     <div className="hero-container">
       <div className="hero-subcontainer">
         <div className="hero-left-text">
-          <p className="hero-title">Short links, big results</p>
+          <h1 className="hero-title">Short links, big results</h1> 
           <p className="hero-sub">A URL shortener built with powerful toold to help you grow and protect your brand.</p>
           <div className="hero-action">
             <Link to="/quote" className="link"><span className="hero-button">Get Started for Free</span></Link>
