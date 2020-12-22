@@ -13,7 +13,7 @@ export default function Header() {
   const[resources, setResources] = useState(false)
 
 
-  return (
+  return (   
     <div className="header-container">
       <div>
         <Link to="/">
@@ -24,7 +24,7 @@ export default function Header() {
         <div className='trigger' onMouseEnter={() => window.innerWidth < 960 ? setBitly(false) : setBitly(true)} onMouseLeave={() => setBitly(false)}> 
           <span className="header-nav-item">Why Bitly?</span>
           {bitly && <Dropdown item={Bitly} />}
-        </div>
+        </div> 
         <div className='trigger' onMouseEnter={() => window.innerWidth < 960 ? setSolutions(false) : setSolutions(true)} onMouseLeave={() => setSolutions(false)}>
           <span className="header-nav-item">Solutions</span>
           {solutions && <Dropdown item={Solutions} />} 

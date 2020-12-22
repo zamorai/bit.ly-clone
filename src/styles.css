@@ -112,6 +112,10 @@ html{
   justify-content: space-around;
 }
 
+@media only screen and (max-width: 600px) {
+  
+}
+
 /*---------- DROPDOWN MENU --------- */
 
 .dropdown-menu {
@@ -172,6 +176,7 @@ html{
 .icon-fill{
   fill: currentColor;   
 }
+
 
 
 /*---------- HERO --------- */
@@ -249,16 +254,18 @@ html{
   z-index: 20; 
   height: 13rem;
   background-color: #0b1736; 
-  padding: 2rem; 
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  flex-direction: column; 
+  padding: 2rem;   
+}
+
+.linker-container_sub{
+  max-width: var(--max-width); 
+  margin-left: auto; 
+  margin-right: auto; 
 }
 
 .linker-text{
   padding: 1.8rem 2rem;  
-  width: 82rem; 
+  width: 72%;  
   border-radius: 1rem;  
   border: none; 
   margin-right: 1.5rem;
@@ -268,7 +275,7 @@ html{
 .linker-button{
   background-color: #1b3987;    
   margin-left: 1.5rem;
-  padding: 2rem 11rem; 
+  padding: 2rem 8%; 
   border-radius: 1rem; 
   border: none; 
   cursor: pointer; 
@@ -280,7 +287,8 @@ html{
   color: #9ca1ad;
   font-size: 1.3rem;
   margin-top: 1rem; 
-  margin-left: -5.5rem; 
+  margin-left: -12rem; 
+  text-align: center; 
 }
 
 /*---------- SCROLL --------- */
